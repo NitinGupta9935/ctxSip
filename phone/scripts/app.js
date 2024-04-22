@@ -459,7 +459,7 @@ $(document).ready(function() {
                         stream      : ctxSip.Stream,
                         constraints : { audio : true, video : false },
                         render      : {
-                            remote : { audio: $('#audioRemote').get()[0] }
+                            remote : $('#audioRemote').get()[0]
                         },
                         RTCConstraints : { "optional": [{ 'DtlsSrtpKeyAgreement': 'true'} ]}
                     }
